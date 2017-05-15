@@ -1,0 +1,11 @@
+app:
+#  build: .
+  image: pataquets/nvpy
+  net: host
+  environment:
+    - DISPLAY
+  volumes:
+    - ${HOME}/.nvpy.cfg:/root/.nvpy.cfg
+    - ${HOME}/.nvpy/:/root/.nvpy/
+    - ${HOME}/.Xauthority:/root/.Xauthority:ro
+    - /tmp/.X11-unix:/tmp/.X11-unix
