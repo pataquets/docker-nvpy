@@ -1,0 +1,1 @@
+alias nvpy='docker run --rm -it -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -v ${HOME}/.Xauthority:/root/.Xauthority:ro -v ${HOME}/.nvpy.cfg:/root/.nvpy.cfg -v ${HOME}/.nvpy/:/root/.nvpy/ pataquets/nvpy'
